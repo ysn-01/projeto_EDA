@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP_27957_F2: Código-Fonte de header.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP_27957_F2<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">header.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="header_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*********************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file   header.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @author Yuri Nascimento</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @email  a27957@alunos.ipca.pt</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @date   May 2024</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *********************************************************************/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;assert.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="header_8h.html#a0fdb7b933ef091574ff57d1f36dd4167">   15</a></span><span class="preprocessor">#define MAX_VERTICES 25</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#pragma warning(disable:4996)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="comment">// Estrutura de dados para representar uma aresta adjacente a um vértice</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_adjacente.html">   19</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_adjacente.html#a7441ef0865bcb3db9b8064dd7375c1ea">   20</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_adjacente.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>; <span class="comment">// Identificador do vértice adjacente</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_adjacente.html#a83201786792501b53e667771949a8129">   21</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_adjacente.html#a83201786792501b53e667771949a8129">valor</a>; <span class="comment">// Valor associado à adjacência</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_adjacente.html#a42cd64244a918a5ac7790523e97d1181">   22</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_adjacente.html#a42cd64244a918a5ac7790523e97d1181">peso</a>; <span class="comment">// Peso associado à adjacência</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_adjacente.html#a2c1fd73dab4b2074dd8c777eacf14a87">   23</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_variable" href="struct_adjacente.html#a2c1fd73dab4b2074dd8c777eacf14a87">proximo</a>; <span class="comment">// Apontador para o próximo vértice adjacente</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="header_8h.html#aaf8d838b51951d29be56e29a7721ee83">   24</a></span>} <a class="code hl_typedef" href="header_8h.html#aaf8d838b51951d29be56e29a7721ee83">Adjacente</a>;</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Estrutura de dados para representar um vértice em um grafo</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_vertice.html">   27</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_vertice.html">Vertice</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_vertice.html#a7441ef0865bcb3db9b8064dd7375c1ea">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_vertice.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>; <span class="comment">// Identificador único do vértice</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_vertice.html#a83201786792501b53e667771949a8129">   29</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_vertice.html#a83201786792501b53e667771949a8129">valor</a>; <span class="comment">// Valor associado ao vértice</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_vertice.html#a7432ec6b760cca5a63570ce7d9f9565b">   30</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_vertice.html#a7432ec6b760cca5a63570ce7d9f9565b">visitado</a>; <span class="comment">// Flag para marcar se o vértice foi visitado durante a busca</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_vertice.html#a07a7e9e4bbfe211218f6fd5c6042cedc">   31</a></span>    <a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_variable" href="struct_vertice.html#a07a7e9e4bbfe211218f6fd5c6042cedc">proxAdjacente</a>; <span class="comment">// Apontador para a lista de vértices adjacentes</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_vertice.html#ad9b4647ef6419916b05903d74de34fd9">   32</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_variable" href="struct_vertice.html#ad9b4647ef6419916b05903d74de34fd9">proxVertice</a>; <span class="comment">// Apontador para o próximo vértice no grafo</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="header_8h.html#a901d403606dfb55e6d42b899c05d3347">   33</a></span>} <a class="code hl_typedef" href="header_8h.html#a901d403606dfb55e6d42b899c05d3347">Vertice</a>;</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// Estrutura de dados para representar um grafo</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_grafo.html">   36</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_grafo.html">Grafo</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_grafo.html#a59b70070c78a3433ac8373d0467441da">   37</a></span>    <a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_variable" href="struct_grafo.html#a59b70070c78a3433ac8373d0467441da">inicioGrafo</a>; <span class="comment">// Apontador para o início do grafo</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_grafo.html#a29cac0aff7e6d15e55e9a8285799fe87">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_grafo.html#a29cac0aff7e6d15e55e9a8285799fe87">numVertices</a>; <span class="comment">// Número atual de vértices no grafo</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_grafo.html#a6af2154f612b1d09b60b7888169da1a4">   39</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_grafo.html#a6af2154f612b1d09b60b7888169da1a4">totVertices</a>; <span class="comment">// Número total de vértices permitidos no grafo</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="header_8h.html#adab04f64457aac52a13e71e40915bd43">   40</a></span>} <a class="code hl_typedef" href="header_8h.html#adab04f64457aac52a13e71e40915bd43">Grafo</a>;</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Estrutura de dados para representar o resultado de uma operação no grafo</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_resultado.html">   43</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_resultado.html">Resultado</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_resultado.html#a03e31e83dcac999c6a8961e0013d4c3e">   44</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_resultado.html#a03e31e83dcac999c6a8961e0013d4c3e">soma</a>; <span class="comment">// Soma dos valores do caminho ou resultado da operação</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_resultado.html#a26272059846e09d4ea8f8fabfe15b563">   45</a></span>    <a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_variable" href="struct_resultado.html#a26272059846e09d4ea8f8fabfe15b563">caminho</a>; <span class="comment">// Apontador para o vértice que representa o caminho ou o resultado</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_resultado.html#af6421f4f9109a2d819790ff48ca558b9">   46</a></span>    <a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_variable" href="struct_resultado.html#af6421f4f9109a2d819790ff48ca558b9">grafo</a>; <span class="comment">// Apontador para o grafo associado ao resultado</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="header_8h.html#a419df8d66e3faa38a1c913e37c1df28a">   47</a></span>} <a class="code hl_typedef" href="header_8h.html#a419df8d66e3faa38a1c913e37c1df28a">Resultado</a>;</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Vertices</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#a1b98c70646478f5122ad1a9f937a4120">CriarVertice</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <a class="code hl_function" href="header_8h.html#a10aff18688d9339dded6101288ae516b">ExisteVertice</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* inicio, <span class="keywordtype">int</span> idVertice);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#aaaef98c8619f87bb0dc16e7238b76911">InserirVertice</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* vertices, <a class="code hl_struct" href="struct_vertice.html">Vertice</a>* novoVertice, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#a268705f63ad9fae1d0b9fddf7d22375e">EliminarVertice</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* vertices, <span class="keywordtype">int</span> idVertice, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#aa963b05356c9ea0441def55eb39319e1">ObterVertice</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* inicio, <span class="keywordtype">int</span> idVertice);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a10f44859b3656e8b04a68cbf73099599">DestruirVertice</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* v);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#ad993f4432cd0e40ae891e1fb36773837">MostrarGrafo</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* grafo);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Adjacencias</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_function" href="header_8h.html#a677e388f22bbc0ea471d6f8370dfc175">CriarAdjacente</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> valor, <span class="keywordtype">int</span> peso);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_function" href="header_8h.html#a6590e794728fa6da94a0d9bec7384ebb">EliminarAdjacente</a>(<a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* listaAdj, <span class="keywordtype">int</span> idAdj, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_function" href="header_8h.html#ad6f9e312adcf3038a472b540241d2d6c">EliminaTodosAdjacentes</a>(<a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* listaAdj, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#aa4fa7a9adfbcca0b36d4770d1921811f">EliminarAdjTodosVertices</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* vertices, <span class="keywordtype">int</span> idVertice, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* <a class="code hl_function" href="header_8h.html#a4bf97be067b4a91b767b636b23faec1f">InserirAdjacente</a>(<a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* listaAdj, <span class="keywordtype">int</span> idDestino, <span class="keywordtype">int</span> valor, <span class="keywordtype">int</span> peso);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a320d7208fba2c9be14143330a782c837">DestruirAdjacente</a>(<a class="code hl_struct" href="struct_adjacente.html">Adjacente</a>* adj);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// Grafo</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#acaa2946d3b0ab2945055d0d1c9d5b34c">MostrarGrafoLA</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_function" href="header_8h.html#a83c38a111c67b68997cf09cd36061f6f">InserirVerticeGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <a class="code hl_struct" href="struct_vertice.html">Vertice</a>* v, <span class="keywordtype">int</span>* res);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_function" href="header_8h.html#a164041c2abcdbc1dea7ee5b0709b62e2">EliminarVerticeGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idVertice, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_function" href="header_8h.html#aa4c482a8360b735627295dd27dffc1f4">EliminarAdjGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idOrigem, <span class="keywordtype">int</span> idDestino, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_struct" href="struct_vertice.html">Vertice</a>* <a class="code hl_function" href="header_8h.html#acb1f35934dfc654b59a01bd498413bc1">OndeEstaVerticeGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idVertice);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_function" href="header_8h.html#a6a333960d6bd19766fdb3a60e6e0bc0f">InserirAdjGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idOrigem, <span class="keywordtype">int</span> idDestino, <span class="keywordtype">bool</span>* res);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><a class="code hl_struct" href="struct_grafo.html">Grafo</a>* <a class="code hl_function" href="header_8h.html#adf19ffb4978792aa2c232ba75da863ab">CriarGrafo</a>(<span class="keywordtype">int</span> tot);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">bool</span> <a class="code hl_function" href="header_8h.html#a53db452435a123ec2bbf597abc1408e5">ExisteVerticeGrafo</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idVertice);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Caminhos</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">bool</span> <a class="code hl_function" href="header_8h.html#aa0101287862bbac03f6b2fa0ce08a15b">BuscarProfundidade</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* v, <span class="keywordtype">int</span> idDestino, <span class="keywordtype">bool</span>* visitado, <span class="keywordtype">int</span>* soma, <a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">int</span> <a class="code hl_function" href="header_8h.html#a0a5735340152611a2b7313b7bc9ffc64">CalcularSomaCaminho</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g, <span class="keywordtype">int</span> idOrigem, <span class="keywordtype">int</span> idDestino);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Soma</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordtype">int</span> <a class="code hl_function" href="header_8h.html#a7b6b404b72fe9aa546cb5e2fd4e52b8a">AtualizarResultado</a>(<a class="code hl_struct" href="struct_resultado.html">Resultado</a>* res, <span class="keywordtype">int</span> somaAtual, <a class="code hl_struct" href="struct_vertice.html">Vertice</a>* caminhoAtual);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">int</span> <a class="code hl_function" href="header_8h.html#a32aa0f01764c5e97de50309798a0b603">BuscarCaminhoMaximo</a>(<a class="code hl_struct" href="struct_vertice.html">Vertice</a>* v, <span class="keywordtype">int</span> somaAtual, <a class="code hl_struct" href="struct_resultado.html">Resultado</a>* res);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><a class="code hl_struct" href="struct_resultado.html">Resultado</a>* <a class="code hl_function" href="header_8h.html#a183065c0ef36f79acd3e1814a3e8636c">CaminhoSomaMaxima</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* g);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">void</span> <a class="code hl_function" href="header_8h.html#a5fc6da9b5a35d8fef55d4318a35d74ca">MostrarSomaMaxima</a>(<a class="code hl_struct" href="struct_grafo.html">Grafo</a>* grafo);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// Ficheiros</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">//Grafo* LerMatrizDeFicheiro(const char* filename, int* res);</span></div>
+<div class="ttc" id="aheader_8h_html_a0a5735340152611a2b7313b7bc9ffc64"><div class="ttname"><a href="header_8h.html#a0a5735340152611a2b7313b7bc9ffc64">CalcularSomaCaminho</a></div><div class="ttdeci">int CalcularSomaCaminho(Grafo *g, int idOrigem, int idDestino)</div><div class="ttdef"><b>Definição</b> caminhos.c:75</div></div>
+<div class="ttc" id="aheader_8h_html_a10aff18688d9339dded6101288ae516b"><div class="ttname"><a href="header_8h.html#a10aff18688d9339dded6101288ae516b">ExisteVertice</a></div><div class="ttdeci">bool ExisteVertice(Vertice *inicio, int idVertice)</div><div class="ttdoc">Verifica se um vértice com um determinado identificador existe na lista de vértices.</div><div class="ttdef"><b>Definição</b> vertices.c:119</div></div>
+<div class="ttc" id="aheader_8h_html_a10f44859b3656e8b04a68cbf73099599"><div class="ttname"><a href="header_8h.html#a10f44859b3656e8b04a68cbf73099599">DestruirVertice</a></div><div class="ttdeci">void DestruirVertice(Vertice *v)</div><div class="ttdoc">Destrói um vértice, libertando a memória associada ao mesmo.</div><div class="ttdef"><b>Definição</b> vertices.c:23</div></div>
+<div class="ttc" id="aheader_8h_html_a164041c2abcdbc1dea7ee5b0709b62e2"><div class="ttname"><a href="header_8h.html#a164041c2abcdbc1dea7ee5b0709b62e2">EliminarVerticeGrafo</a></div><div class="ttdeci">Grafo * EliminarVerticeGrafo(Grafo *g, int idVertice, bool *res)</div><div class="ttdoc">Elimina um vértice de um grafo com base em seu identificador.</div><div class="ttdef"><b>Definição</b> grafo.c:177</div></div>
+<div class="ttc" id="aheader_8h_html_a183065c0ef36f79acd3e1814a3e8636c"><div class="ttname"><a href="header_8h.html#a183065c0ef36f79acd3e1814a3e8636c">CaminhoSomaMaxima</a></div><div class="ttdeci">Resultado * CaminhoSomaMaxima(Grafo *g)</div><div class="ttdef"><b>Definição</b> soma.c:93</div></div>
+<div class="ttc" id="aheader_8h_html_a1b98c70646478f5122ad1a9f937a4120"><div class="ttname"><a href="header_8h.html#a1b98c70646478f5122ad1a9f937a4120">CriarVertice</a></div><div class="ttdeci">Vertice * CriarVertice(int id, int valor)</div><div class="ttdoc">Cria um novo vértice com um identificador especificado.</div><div class="ttdef"><b>Definição</b> vertices.c:41</div></div>
+<div class="ttc" id="aheader_8h_html_a268705f63ad9fae1d0b9fddf7d22375e"><div class="ttname"><a href="header_8h.html#a268705f63ad9fae1d0b9fddf7d22375e">EliminarVertice</a></div><div class="ttdeci">Vertice * EliminarVertice(Vertice *vertices, int idVertice, bool *res)</div><div class="ttdoc">Elimina um vértice com um determinado identificador da lista de vértices do grafo.</div><div class="ttdef"><b>Definição</b> vertices.c:170</div></div>
+<div class="ttc" id="aheader_8h_html_a320d7208fba2c9be14143330a782c837"><div class="ttname"><a href="header_8h.html#a320d7208fba2c9be14143330a782c837">DestruirAdjacente</a></div><div class="ttdeci">void DestruirAdjacente(Adjacente *adj)</div><div class="ttdoc">Liberta a memória associada a um adjacente.</div><div class="ttdef"><b>Definição</b> adjacentes.c:49</div></div>
+<div class="ttc" id="aheader_8h_html_a32aa0f01764c5e97de50309798a0b603"><div class="ttname"><a href="header_8h.html#a32aa0f01764c5e97de50309798a0b603">BuscarCaminhoMaximo</a></div><div class="ttdeci">int BuscarCaminhoMaximo(Vertice *v, int somaAtual, Resultado *res)</div><div class="ttdef"><b>Definição</b> soma.c:55</div></div>
+<div class="ttc" id="aheader_8h_html_a419df8d66e3faa38a1c913e37c1df28a"><div class="ttname"><a href="header_8h.html#a419df8d66e3faa38a1c913e37c1df28a">Resultado</a></div><div class="ttdeci">struct Resultado Resultado</div></div>
+<div class="ttc" id="aheader_8h_html_a4bf97be067b4a91b767b636b23faec1f"><div class="ttname"><a href="header_8h.html#a4bf97be067b4a91b767b636b23faec1f">InserirAdjacente</a></div><div class="ttdeci">Adjacente * InserirAdjacente(Adjacente *listaAdj, int idDestino, int valor, int peso)</div><div class="ttdef"><b>Definição</b> adjacentes.c:142</div></div>
+<div class="ttc" id="aheader_8h_html_a53db452435a123ec2bbf597abc1408e5"><div class="ttname"><a href="header_8h.html#a53db452435a123ec2bbf597abc1408e5">ExisteVerticeGrafo</a></div><div class="ttdeci">bool ExisteVerticeGrafo(Grafo *g, int idVertice)</div><div class="ttdoc">Verifica se um vértice existe em um grafo com base em seu identificador.</div><div class="ttdef"><b>Definição</b> grafo.c:158</div></div>
+<div class="ttc" id="aheader_8h_html_a5fc6da9b5a35d8fef55d4318a35d74ca"><div class="ttname"><a href="header_8h.html#a5fc6da9b5a35d8fef55d4318a35d74ca">MostrarSomaMaxima</a></div><div class="ttdeci">void MostrarSomaMaxima(Grafo *grafo)</div><div class="ttdef"><b>Definição</b> soma.c:122</div></div>
+<div class="ttc" id="aheader_8h_html_a6590e794728fa6da94a0d9bec7384ebb"><div class="ttname"><a href="header_8h.html#a6590e794728fa6da94a0d9bec7384ebb">EliminarAdjacente</a></div><div class="ttdeci">Adjacente * EliminarAdjacente(Adjacente *listaAdj, int idAdj, bool *res)</div><div class="ttdoc">Elimina uma adjacência com um determinado identificador da lista de adjacências.</div><div class="ttdef"><b>Definição</b> adjacentes.c:69</div></div>
+<div class="ttc" id="aheader_8h_html_a677e388f22bbc0ea471d6f8370dfc175"><div class="ttname"><a href="header_8h.html#a677e388f22bbc0ea471d6f8370dfc175">CriarAdjacente</a></div><div class="ttdeci">Adjacente * CriarAdjacente(int id, int valor, int peso)</div><div class="ttdoc">Cria um novo adjacente com um identificador e um peso especificados.</div><div class="ttdef"><b>Definição</b> adjacentes.c:26</div></div>
+<div class="ttc" id="aheader_8h_html_a6a333960d6bd19766fdb3a60e6e0bc0f"><div class="ttname"><a href="header_8h.html#a6a333960d6bd19766fdb3a60e6e0bc0f">InserirAdjGrafo</a></div><div class="ttdeci">Grafo * InserirAdjGrafo(Grafo *g, int idOrigem, int idDestino, bool *res)</div><div class="ttdef"><b>Definição</b> grafo.c:87</div></div>
+<div class="ttc" id="aheader_8h_html_a7b6b404b72fe9aa546cb5e2fd4e52b8a"><div class="ttname"><a href="header_8h.html#a7b6b404b72fe9aa546cb5e2fd4e52b8a">AtualizarResultado</a></div><div class="ttdeci">int AtualizarResultado(Resultado *res, int somaAtual, Vertice *caminhoAtual)</div><div class="ttdef"><b>Definição</b> soma.c:27</div></div>
+<div class="ttc" id="aheader_8h_html_a83c38a111c67b68997cf09cd36061f6f"><div class="ttname"><a href="header_8h.html#a83c38a111c67b68997cf09cd36061f6f">InserirVerticeGrafo</a></div><div class="ttdeci">Grafo * InserirVerticeGrafo(Grafo *g, Vertice *v, int *res)</div><div class="ttdef"><b>Definição</b> grafo.c:51</div></div>
+<div class="ttc" id="aheader_8h_html_a901d403606dfb55e6d42b899c05d3347"><div class="ttname"><a href="header_8h.html#a901d403606dfb55e6d42b899c05d3347">Vertice</a></div><div class="ttdeci">struct Vertice Vertice</div></div>
+<div class="ttc" id="aheader_8h_html_aa0101287862bbac03f6b2fa0ce08a15b"><div class="ttname"><a href="header_8h.html#aa0101287862bbac03f6b2fa0ce08a15b">BuscarProfundidade</a></div><div class="ttdeci">bool BuscarProfundidade(Vertice *v, int idDestino, bool *visitado, int *soma, Grafo *g)</div><div class="ttdef"><b>Definição</b> caminhos.c:29</div></div>
+<div class="ttc" id="aheader_8h_html_aa4c482a8360b735627295dd27dffc1f4"><div class="ttname"><a href="header_8h.html#aa4c482a8360b735627295dd27dffc1f4">EliminarAdjGrafo</a></div><div class="ttdeci">Grafo * EliminarAdjGrafo(Grafo *g, int idOrigem, int idDestino, bool *res)</div><div class="ttdoc">Elimina uma aresta entre dois vértices em um grafo.</div><div class="ttdef"><b>Definição</b> grafo.c:116</div></div>
+<div class="ttc" id="aheader_8h_html_aa4fa7a9adfbcca0b36d4770d1921811f"><div class="ttname"><a href="header_8h.html#aa4fa7a9adfbcca0b36d4770d1921811f">EliminarAdjTodosVertices</a></div><div class="ttdeci">Vertice * EliminarAdjTodosVertices(Vertice *vertices, int idVertice, bool *res)</div><div class="ttdoc">Elimina todas as adjacências de um vértice com um determinado identificador em todos os vértices do g...</div><div class="ttdef"><b>Definição</b> vertices.c:212</div></div>
+<div class="ttc" id="aheader_8h_html_aa963b05356c9ea0441def55eb39319e1"><div class="ttname"><a href="header_8h.html#aa963b05356c9ea0441def55eb39319e1">ObterVertice</a></div><div class="ttdeci">Vertice * ObterVertice(Vertice *inicio, int idVertice)</div><div class="ttdoc">Obtém um vértice com um determinado identificador na lista de vértices.</div><div class="ttdef"><b>Definição</b> vertices.c:143</div></div>
+<div class="ttc" id="aheader_8h_html_aaaef98c8619f87bb0dc16e7238b76911"><div class="ttname"><a href="header_8h.html#aaaef98c8619f87bb0dc16e7238b76911">InserirVertice</a></div><div class="ttdeci">Vertice * InserirVertice(Vertice *vertices, Vertice *novoVertice, bool *res)</div><div class="ttdoc">Insere um novo vértice na lista de vértices do grafo.</div><div class="ttdef"><b>Definição</b> vertices.c:71</div></div>
+<div class="ttc" id="aheader_8h_html_aaf8d838b51951d29be56e29a7721ee83"><div class="ttname"><a href="header_8h.html#aaf8d838b51951d29be56e29a7721ee83">Adjacente</a></div><div class="ttdeci">struct Adjacente Adjacente</div></div>
+<div class="ttc" id="aheader_8h_html_acaa2946d3b0ab2945055d0d1c9d5b34c"><div class="ttname"><a href="header_8h.html#acaa2946d3b0ab2945055d0d1c9d5b34c">MostrarGrafoLA</a></div><div class="ttdeci">void MostrarGrafoLA(Grafo *g)</div><div class="ttdoc">Mostra um grafo representado como lista de adjacências.</div><div class="ttdef"><b>Definição</b> grafo.c:194</div></div>
+<div class="ttc" id="aheader_8h_html_acb1f35934dfc654b59a01bd498413bc1"><div class="ttname"><a href="header_8h.html#acb1f35934dfc654b59a01bd498413bc1">OndeEstaVerticeGrafo</a></div><div class="ttdeci">Vertice * OndeEstaVerticeGrafo(Grafo *g, int idVertice)</div><div class="ttdoc">Encontra um vértice em um grafo com base em seu identificador.</div><div class="ttdef"><b>Definição</b> grafo.c:140</div></div>
+<div class="ttc" id="aheader_8h_html_ad6f9e312adcf3038a472b540241d2d6c"><div class="ttname"><a href="header_8h.html#ad6f9e312adcf3038a472b540241d2d6c">EliminaTodosAdjacentes</a></div><div class="ttdeci">Adjacente * EliminaTodosAdjacentes(Adjacente *listaAdj, bool *res)</div><div class="ttdoc">Elimina todas as adjacências da lista de adjacências.</div><div class="ttdef"><b>Definição</b> adjacentes.c:108</div></div>
+<div class="ttc" id="aheader_8h_html_ad993f4432cd0e40ae891e1fb36773837"><div class="ttname"><a href="header_8h.html#ad993f4432cd0e40ae891e1fb36773837">MostrarGrafo</a></div><div class="ttdeci">void MostrarGrafo(Vertice *grafo)</div><div class="ttdoc">Mostra os vértices e suas adjacências no grafo.</div><div class="ttdef"><b>Definição</b> vertices.c:236</div></div>
+<div class="ttc" id="aheader_8h_html_adab04f64457aac52a13e71e40915bd43"><div class="ttname"><a href="header_8h.html#adab04f64457aac52a13e71e40915bd43">Grafo</a></div><div class="ttdeci">struct Grafo Grafo</div></div>
+<div class="ttc" id="aheader_8h_html_adf19ffb4978792aa2c232ba75da863ab"><div class="ttname"><a href="header_8h.html#adf19ffb4978792aa2c232ba75da863ab">CriarGrafo</a></div><div class="ttdeci">Grafo * CriarGrafo(int tot)</div><div class="ttdef"><b>Definição</b> grafo.c:23</div></div>
+<div class="ttc" id="astruct_adjacente_html"><div class="ttname"><a href="struct_adjacente.html">Adjacente</a></div><div class="ttdef"><b>Definição</b> header.h:19</div></div>
+<div class="ttc" id="astruct_adjacente_html_a2c1fd73dab4b2074dd8c777eacf14a87"><div class="ttname"><a href="struct_adjacente.html#a2c1fd73dab4b2074dd8c777eacf14a87">Adjacente::proximo</a></div><div class="ttdeci">struct Adjacente * proximo</div><div class="ttdef"><b>Definição</b> header.h:23</div></div>
+<div class="ttc" id="astruct_adjacente_html_a42cd64244a918a5ac7790523e97d1181"><div class="ttname"><a href="struct_adjacente.html#a42cd64244a918a5ac7790523e97d1181">Adjacente::peso</a></div><div class="ttdeci">int peso</div><div class="ttdef"><b>Definição</b> header.h:22</div></div>
+<div class="ttc" id="astruct_adjacente_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="struct_adjacente.html#a7441ef0865bcb3db9b8064dd7375c1ea">Adjacente::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> header.h:20</div></div>
+<div class="ttc" id="astruct_adjacente_html_a83201786792501b53e667771949a8129"><div class="ttname"><a href="struct_adjacente.html#a83201786792501b53e667771949a8129">Adjacente::valor</a></div><div class="ttdeci">int valor</div><div class="ttdef"><b>Definição</b> header.h:21</div></div>
+<div class="ttc" id="astruct_grafo_html"><div class="ttname"><a href="struct_grafo.html">Grafo</a></div><div class="ttdef"><b>Definição</b> header.h:36</div></div>
+<div class="ttc" id="astruct_grafo_html_a29cac0aff7e6d15e55e9a8285799fe87"><div class="ttname"><a href="struct_grafo.html#a29cac0aff7e6d15e55e9a8285799fe87">Grafo::numVertices</a></div><div class="ttdeci">int numVertices</div><div class="ttdef"><b>Definição</b> header.h:38</div></div>
+<div class="ttc" id="astruct_grafo_html_a59b70070c78a3433ac8373d0467441da"><div class="ttname"><a href="struct_grafo.html#a59b70070c78a3433ac8373d0467441da">Grafo::inicioGrafo</a></div><div class="ttdeci">Vertice * inicioGrafo</div><div class="ttdef"><b>Definição</b> header.h:37</div></div>
+<div class="ttc" id="astruct_grafo_html_a6af2154f612b1d09b60b7888169da1a4"><div class="ttname"><a href="struct_grafo.html#a6af2154f612b1d09b60b7888169da1a4">Grafo::totVertices</a></div><div class="ttdeci">int totVertices</div><div class="ttdef"><b>Definição</b> header.h:39</div></div>
+<div class="ttc" id="astruct_resultado_html"><div class="ttname"><a href="struct_resultado.html">Resultado</a></div><div class="ttdef"><b>Definição</b> header.h:43</div></div>
+<div class="ttc" id="astruct_resultado_html_a03e31e83dcac999c6a8961e0013d4c3e"><div class="ttname"><a href="struct_resultado.html#a03e31e83dcac999c6a8961e0013d4c3e">Resultado::soma</a></div><div class="ttdeci">int soma</div><div class="ttdef"><b>Definição</b> header.h:44</div></div>
+<div class="ttc" id="astruct_resultado_html_a26272059846e09d4ea8f8fabfe15b563"><div class="ttname"><a href="struct_resultado.html#a26272059846e09d4ea8f8fabfe15b563">Resultado::caminho</a></div><div class="ttdeci">Vertice * caminho</div><div class="ttdef"><b>Definição</b> header.h:45</div></div>
+<div class="ttc" id="astruct_resultado_html_af6421f4f9109a2d819790ff48ca558b9"><div class="ttname"><a href="struct_resultado.html#af6421f4f9109a2d819790ff48ca558b9">Resultado::grafo</a></div><div class="ttdeci">Grafo * grafo</div><div class="ttdef"><b>Definição</b> header.h:46</div></div>
+<div class="ttc" id="astruct_vertice_html"><div class="ttname"><a href="struct_vertice.html">Vertice</a></div><div class="ttdef"><b>Definição</b> header.h:27</div></div>
+<div class="ttc" id="astruct_vertice_html_a07a7e9e4bbfe211218f6fd5c6042cedc"><div class="ttname"><a href="struct_vertice.html#a07a7e9e4bbfe211218f6fd5c6042cedc">Vertice::proxAdjacente</a></div><div class="ttdeci">Adjacente * proxAdjacente</div><div class="ttdef"><b>Definição</b> header.h:31</div></div>
+<div class="ttc" id="astruct_vertice_html_a7432ec6b760cca5a63570ce7d9f9565b"><div class="ttname"><a href="struct_vertice.html#a7432ec6b760cca5a63570ce7d9f9565b">Vertice::visitado</a></div><div class="ttdeci">bool visitado</div><div class="ttdef"><b>Definição</b> header.h:30</div></div>
+<div class="ttc" id="astruct_vertice_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="struct_vertice.html#a7441ef0865bcb3db9b8064dd7375c1ea">Vertice::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> header.h:28</div></div>
+<div class="ttc" id="astruct_vertice_html_a83201786792501b53e667771949a8129"><div class="ttname"><a href="struct_vertice.html#a83201786792501b53e667771949a8129">Vertice::valor</a></div><div class="ttdeci">int valor</div><div class="ttdef"><b>Definição</b> header.h:29</div></div>
+<div class="ttc" id="astruct_vertice_html_ad9b4647ef6419916b05903d74de34fd9"><div class="ttname"><a href="struct_vertice.html#ad9b4647ef6419916b05903d74de34fd9">Vertice::proxVertice</a></div><div class="ttdeci">struct Vertice * proxVertice</div><div class="ttdef"><b>Definição</b> header.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
