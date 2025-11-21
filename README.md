@@ -1,6 +1,13 @@
-# Projeto de Estruturas de Dados Avançadas (EDA) – C
+# Projeto de Estruturas de Dados Avançadas (EDA – C)
 
-Projeto desenvolvido no âmbito da Unidade Curricular **Estruturas de Dados Avançadas (EDA)** do 1.º ano (2.º semestre), em linguagem **C**.
+## Autor
+- **Nome:** Yuri Nascimento
+- **Número:** 27957
+- **Curso:** Engenharia de Sistemas Informáticos
+
+---
+
+Projeto em C desenvolvida no âmbito da unidade curricular **Estruturas de Dados Avançadas**.
 
 O objetivo é aplicar estruturas de dados dinâmicas, armazenamento em ficheiro e algoritmos de procura para resolver problemas de otimização sobre matrizes de inteiros.
 
