@@ -7,9 +7,9 @@
 
 ---
 
-Projeto em C desenvolvida no âmbito da unidade curricular **Estruturas de Dados Avançadas**.
+Projeto em C desenvolvido no âmbito da unidade curricular **Estruturas de Dados Avançadas**.
 
-O objetivo é aplicar estruturas de dados dinâmicas, armazenamento em ficheiro e algoritmos de procura para resolver problemas de otimização sobre matrizes de inteiros.
+O projeto aplica estruturas de dados dinâmicas, armazenamento em ficheiros e algoritmos de procura para resolver problemas de otimização sobre matrizes de inteiros.
 
 ## Fase 1 – Listas ligadas
 
