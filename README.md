@@ -29,6 +29,8 @@ Principais pontos:
     
 - cálculo da soma máxima sob as restrições de linha/coluna.
 
+---
+
 ## Fase 2 – Grafos
 
 Modelação do problema com **grafos dirigidos**:
