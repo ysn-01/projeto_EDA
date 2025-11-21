@@ -45,3 +45,5 @@ Modelação do problema com **grafos dirigidos**:
   
   - o valor máximo encontrado;
   - o caminho (ou caminhos) correspondente(s).
+
+---
